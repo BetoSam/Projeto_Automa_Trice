@@ -26,13 +26,10 @@ JDK e Maven
 
 1. Clone este repositório em sua máquina local.
 2. Abra o projeto em uma IDE ou no Terminal
+
 3. Execute os comandos abaixo
 
-Executar os testes API e Unitário
-```bash
-mvn test
-
-
 Executar os testes de UI
+
 ```bash
-mvn test -Dtest=Executa
+mvn test -Dtest=ExecutaTest
