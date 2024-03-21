@@ -27,9 +27,8 @@ JDK e Maven
 1. Clone este repositório em sua máquina local.
 2. Abra o projeto em uma IDE ou no Terminal
 
-3. Execute os comandos abaixo
+## Executar por linha de comando
 
-Executar os testes de UI
+Navegue até a raiz do projeto
 
-```bash
-mvn test -Dtest=ExecutaTest
+Execute o comando mvn test
