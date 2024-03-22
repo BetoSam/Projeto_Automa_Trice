@@ -9,12 +9,16 @@ import java.awt.Toolkit;
 import java.awt.datatransfer.StringSelection;
 import java.awt.event.KeyEvent;
 import java.io.File;
+import java.time.Duration;
 
 import org.apache.commons.io.FileUtils;
 import org.openqa.selenium.By;
 import org.openqa.selenium.OutputType;
 import org.openqa.selenium.TakesScreenshot;
+import org.openqa.selenium.WebElement;
 import org.openqa.selenium.chrome.ChromeDriver;
+import org.openqa.selenium.support.ui.ExpectedConditions;
+import org.openqa.selenium.support.ui.WebDriverWait;
 
 import drivers.DriversFactory;
 import io.github.bonigarcia.wdm.WebDriverManager;
@@ -53,6 +57,12 @@ public class Metodos extends DriversFactory {
 
 	public void fecharNavegador() {
 		driver.quit();
+	}
+
+	public void aguardarElemento(By elemento) {
+		WebDriverWait wait = new WebDriverWait(driver, Duration.ofSeconds(5));
+		WebElement element = wait.until(ExpectedConditions.elementToBeClickable(elemento));
+		element.click();
 	}
 
 	public void validarUrl(String texto) {
