@@ -18,7 +18,7 @@ public class ExecutaTest {
 
 	}
 
-	// @After
+	 @After
 	public void encerrarTest() {
 		metodo.fecharNavegador();
 	}
@@ -69,7 +69,7 @@ public class ExecutaTest {
 		page.next("nextenterinsurantdata", "Enter Insurant Data");
 		page.escolherCategoria("enterinsurantdata");
 		page.formularioEnterInsurantData("Joao", "Roberto", "09/07/1995", "Male", "santos", "Angola", "1234", "Luanda",
-				"Employee", " Cliff Diving", "www.e2etreinamentos.com.br",
+				"Employee", " Cliff Diving", "www.test.com.br",
 				"C:\\Users\\jsbsa\\Captura de tela 2023-04-11 155241.png");
 		page.next("nextenterproductdata", "Enter Product Data");
 		page.escolherCategoria("enterproductdata");
@@ -77,8 +77,9 @@ public class ExecutaTest {
 		page.next("nextselectpriceoption", "Select Price Option");
 		page.selectPriceOption(3);
 		page.next("nextsendquote", "Send Quote");
-		page.formularioSendQuot("jsbsam_lb@hotmail.com", "123454666", "Beto", "Beto123", "Beto123",
+		page.formularioSendQuot("tomasa352@uorak.com", "123454666", "Beto", "Beto123", "Beto123",
 				"*******************E2E***********");
+		page.finalizarCadastro();
 		metodo.evidencias("cadastro Finalizado");
 
 	}

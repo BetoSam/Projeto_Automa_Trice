@@ -239,4 +239,9 @@ public class PageFormulario {
 		metodo.clicar(marcas);
 
 	}
+	public void finalizarCadastro () {
+		By finalizar = By.id("sendemail");
+		metodo.clicar(finalizar);
+		metodo.pausa(11000);
+	}
 }

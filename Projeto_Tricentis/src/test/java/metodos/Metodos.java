@@ -78,6 +78,15 @@ public class Metodos extends DriversFactory {
 		driver.findElement(elemento).click();
 	}
 
+	public void pausa(int tempo) {
+		try {
+			Thread.sleep(tempo);
+		} catch (InterruptedException e) {
+			// TODO Auto-generated catch block
+			e.printStackTrace();
+		}
+	}
+
 	public void uploadArquivo(String caminho) {
 		try {
 			Robot robot = new Robot();
