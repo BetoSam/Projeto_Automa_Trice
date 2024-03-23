@@ -32,3 +32,8 @@ JDK e Maven
 Navegue até a raiz do projeto
 
 Execute o comando mvn test
+
+## OBS :
+Para realizar o cadastro completo , tera que modificar o caminho do arquivo C:\\Users\\jsbsa\\Captura de tela 2023-04-11 155241.png"
+ 
+para o caminho de um arquivo existente na maquina que sera realizado o teste .XD

@@ -5,6 +5,7 @@ import org.junit.Before;
 import org.junit.Test;
 
 import metodos.Metodos;
+import navegadores.Navegadores;
 import page.PageFormulario;
 
 public class ExecutaTest {
@@ -14,13 +15,14 @@ public class ExecutaTest {
 
 	@Before
 	public void iniciarTeste() {
-		metodo.abrirNavegador();
+		Navegadores.abrirNavegador();
+		
 
 	}
 
-	 @After
+	@After
 	public void encerrarTest() {
-		metodo.fecharNavegador();
+		Navegadores.fecharNavegador();
 	}
 
 	// @Test
@@ -81,6 +83,7 @@ public class ExecutaTest {
 				"*******************E2E***********");
 		page.finalizarCadastro();
 		metodo.evidencias("cadastro Finalizado");
+		page.validarMsgCadastro("Sending e-mail success!");
 
 	}
 }

@@ -12,6 +12,7 @@ import java.io.File;
 import java.time.Duration;
 
 import org.apache.commons.io.FileUtils;
+import org.openqa.selenium.Alert;
 import org.openqa.selenium.By;
 import org.openqa.selenium.OutputType;
 import org.openqa.selenium.TakesScreenshot;
@@ -24,14 +25,6 @@ import drivers.DriversFactory;
 import io.github.bonigarcia.wdm.WebDriverManager;
 
 public class Metodos extends DriversFactory {
-
-	public void abrirNavegador() {
-		WebDriverManager.chromedriver().setup();
-		driver = new ChromeDriver();
-		driver.get("https://sampleapp.tricentis.com/101/app.php");
-		driver.manage().window().maximize();
-
-	}
 
 	public void validarMensagem(By elemento, String msgEsperada) {
 		String msgCapturado = driver.findElement(elemento).getText();
@@ -53,10 +46,6 @@ public class Metodos extends DriversFactory {
 		} catch (Exception e) {
 			e.printStackTrace();
 		}
-	}
-
-	public void fecharNavegador() {
-		driver.quit();
 	}
 
 	public void aguardarElemento(By elemento) {
@@ -82,7 +71,7 @@ public class Metodos extends DriversFactory {
 		try {
 			Thread.sleep(tempo);
 		} catch (InterruptedException e) {
-			// TODO Auto-generated catch block
+			
 			e.printStackTrace();
 		}
 	}

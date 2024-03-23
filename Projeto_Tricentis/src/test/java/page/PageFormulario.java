@@ -244,4 +244,8 @@ public class PageFormulario {
 		metodo.clicar(finalizar);
 		metodo.pausa(11000);
 	}
+	public void validarMsgCadastro(String msgAlert) {
+		By msgCadastro = By.xpath("//div[@class='sweet-alert showSweetAlert visible']//h2[text()='Sending e-mail success!']");
+		metodo.validarMensagem(msgCadastro, msgAlert);
+	}
 }
