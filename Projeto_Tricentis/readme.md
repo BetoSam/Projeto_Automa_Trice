@@ -15,7 +15,7 @@ JDK e Maven
 
 ## Estrutura do Projeto
  
- Este projeto foi desenvolvolvido com disigner partner page objets que consiste de atribuir cada ação e cada metodo
+ Este projeto foi desenvolvido com disigner partner page objets que consiste de atribuir cada ação e cada metodo
  pré definidos para a pagina em que o teste esta sendo executado.
  Na classe ExecutaTest quando chamar o teste para ser executado chamando 
  os metodos da page prescisa mudar apenas massa de teste (dados que serão usados de acordo 
